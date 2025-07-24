@@ -1,11 +1,9 @@
-import { Navigate } from "react-router-dom";
+import React from 'react'
 
-function ProtectedRoutes({children, user}) {
-    if (user) {
-        return children;
-    } else {
-        return <Navigate to="/login" />;
-    }
+function ProtectedRoutes() {
+  return (
+    <div>ProtectedRoutes</div>
+  )
 }
 
-export default ProtectedRoutes;
+export default ProtectedRoutes
